@@ -1,4 +1,4 @@
 # Observer Pattern
-Flyweight Pattern-
-Singleton Pattern-
-Script Table Object
+# Flyweight Pattern
+# Singleton Pattern
+# Script Table Object
