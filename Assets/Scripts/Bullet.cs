@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private int _speed;
     [SerializeField] private Transform _spawnPoint;
     [SerializeField] private STO_BulletStat _stats;
     public bool IsMove;
@@ -29,7 +28,6 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         onResetTransform();
-       _speed = _stats.Speed;
     }
     private void Update()
     {
@@ -40,6 +38,6 @@ public class Bullet : MonoBehaviour
     } 
     private void Move()
     {
-        transform.position += Vector3.forward*Time.deltaTime* _speed;
+        transform.position += Vector3.forward*Time.deltaTime* _stats.Speed;
     } 
 }
